@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'homepage', # Homepage of the app.
     'accounts', # app to store user accounts
     'core' # main app
 ]
