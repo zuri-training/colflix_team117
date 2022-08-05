@@ -1,0 +1,10 @@
+<h3>LOGIN PAGE!</h3>
+
+<form action="login" method="POST">
+    {% csrf_token %}
+
+    {{log_form.as_p}}
+    <p><button type="submit">Submit</button></p>
+
+</form>
+   
