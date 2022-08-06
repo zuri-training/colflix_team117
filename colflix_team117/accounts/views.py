@@ -6,7 +6,6 @@ from django.contrib import messages
 from django.views import View
 
 
-
 class Register(View):
     form_class = RegisterForm
     template_name = 'register.html'
