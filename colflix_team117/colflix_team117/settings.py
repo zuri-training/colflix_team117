@@ -128,5 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'templates/static')#django permanently keep
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
