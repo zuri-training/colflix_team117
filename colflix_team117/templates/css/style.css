@@ -44,14 +44,12 @@ body {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background: #ABACB4;
-    
     padding: 10px 15px;
     border: none;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: orange;
   }
   
   #main {
@@ -97,8 +95,8 @@ body {
  
 }
 
-@media (max-width: 767.98px) { ... }
+@media (max-width: 767.98px) {  }
 
-@media (max-width: 991.98px) { ... }
+@media (max-width: 991.98px) {  }
 
-@media (max-width: 1199.98px) { ... }
+@media (max-width: 1199.98px) { }
