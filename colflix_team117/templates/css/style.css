@@ -1,0 +1,104 @@
+body {
+    background: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#music--category{
+    padding-bottom: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #ABACB4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background: rgba(255, 99, 71, 1);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background: #ABACB4;
+    
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  aside{
+    background: #CDCDD2;
+  }
+
+  #flex-box{
+    margin-left: -1000px;
+  }
+
+  .new {
+    display: none;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+
+    .sidebar a {
+      font-size: 18px;
+    }
+
+    .new {
+      display: block;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+@media (max-width: 575.98px) { 
+  .sidebar ,  #main{
+    display: none;
+  }
+
+ 
+}
+
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 991.98px) { ... }
+
+@media (max-width: 1199.98px) { ... }
