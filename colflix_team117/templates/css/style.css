@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.Mobile{
+    display: none;
+}
+
 #music--category{
     padding-bottom: 20px;
 }
@@ -65,7 +69,7 @@ body {
     margin-left: -1000px;
   }
 
-  .new {
+  .new, .profile {
     display: none;
   }
 
@@ -73,10 +77,23 @@ body {
     background: rgba(205, 205, 210, 1);
   }
 
+
+
   @media (max-width: 320px) {
-    .search-bar {
+    .search-bar, .upload,
+     .notify, .profile, .navbar-cont {
       display: none;
     }
+
+    .new{
+      display: block;
+    }
+
+    .Mobile{
+      display: block;
+    }
+
+    
   }
   @media screen and (max-height: 450px) {
     .sidebar {
