@@ -69,6 +69,15 @@ body {
     display: none;
   }
 
+  .bg-color{
+    background: rgba(205, 205, 210, 1);
+  }
+
+  @media (max-width: 320px) {
+    .search-bar {
+      display: none;
+    }
+  }
   @media screen and (max-height: 450px) {
     .sidebar {
       padding-top: 15px;
@@ -82,7 +91,7 @@ body {
       display: block;
     }
 
-    input[type="file"] {
+    input[type="file"], .search-bar {
       display: none;
     }
   }
