@@ -20,7 +20,7 @@ nav ul {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 76px;
+    gap: 75px;
 }
 
 nav .logo {
