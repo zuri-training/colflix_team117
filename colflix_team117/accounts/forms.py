@@ -8,22 +8,11 @@ from django.contrib.auth.models import User
 class RegisterForm(UserCreationForm):
     name = forms.CharField(label="First Name", max_length=200)
     email = forms.EmailField(label="Email", max_length=200)
-<<<<<<< HEAD
-    
+
     class Meta:  
         model = User  
         fields = ('name', 'email', 'username', 'password1')  
-=======
-    username = forms.CharField(label="Username", max_length=200)
-    password= forms.CharField(label="Password", max_length=200)
-    
-    name.widget.attrs.update({'class': 'form-control'})
-    email.widget.attrs.update({'class':'form-control'})
-    username.widget.attrs.update({'class': 'form-control'})
-    password.widget.attrs.update({'class':'form-control'})
 
-
->>>>>>> main
 
 class LoginForm(forms.Form):
     username = forms.CharField(label="Username/email",
@@ -32,3 +21,14 @@ class LoginForm(forms.Form):
 
     username.widget.attrs.update({'class': 'form-control'})
     password.widget.attrs.update({'class':'form-control'})
+
+"""
+=======
+    username = forms.CharField(label="Username", max_length=200)
+    password= forms.CharField(label="Password", max_length=200)
+    
+    name.widget.attrs.update({'class': 'form-control'})
+    email.widget.attrs.update({'class':'form-control'})
+    username.widget.attrs.update({'class': 'form-control'})
+    password.widget.attrs.update({'class':'form-control'})
+"""
