@@ -7,7 +7,7 @@
     <title>index</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
          <!--Toggle content-->
@@ -64,9 +64,9 @@
                     </div>
             </div>
         </div>
-        <!--Mobile view-->
-        <div class="container">
-            <div class="Mobile d-flex justify-content-between">
+        <!--Nav for Mobile view-->
+        <div class="container Mobile mt-4">
+            <div class="d-flex justify-content-between">
                     <div>
                         <img src="./image/logo2.png" class="align-self-center" width="60px" height="29.21px" alt="logo" />
                     </div>
@@ -74,20 +74,20 @@
                         <img src="./image/radar.png" class="mx-3  new" width="24px" height="24px" alt="notify icon"/>
                         <img src="./image/notification.png" class="mx-3" width="24px" height="24px" alt="notify icon"/>
                         <img src="./image/search (2).png" class="mx-3  new" width="24px" height="24px" alt="notify icon"/>
-                        <img src="./image/tee.png" class="new" width="24px" height="28px" alt="profile icon"/>
+                        <img src="./image/tee.png" class="new" width="24px" height="24px" alt="profile icon"/>
                     </div>
             </div>
        </div>
          <!--main-->
          <main>
              <!--First video row-->
-            <div class="container mt-5">
+            <div class="container mt-5 video-row">
                     <span class="d-flex justify-content-between">
-                        <a class="d-flex align-content-center  text-decoration-none"> 
-                                <img src="./image/upload.png" class="align-self-center bg-color" width="32px" height="32px" alt="upload icon"/> 
-                                <h2 class="fw-bold align-self-center p-1 text-dark px-3">Your uploads</h2> 
+                        <a class="d-flex align-content-center text-decoration-none"> 
+                                <img src="./image/upload.png" class="align-self-center bg-color upload-file " width="32px" height="32px" alt="upload icon"/> 
+                                <h2 class="fw-bold align-self-center p-1 text-dark px-3 upload-file">Your uploads</h2> 
                         </a>
-                        <a class="text-center text-decoration-none">
+                        <a class="text-center text-decoration-none upload-file">
                             <label for="file">
                                 <input type="file" class="bg-dark " id="file" style="display: none;">        
                                 <img src="./image/plus.png" width="32px" height="32px" alt="plus icon"/>
@@ -95,9 +95,29 @@
                             <p class="text-dark">New uploads</p>
                         </a>
                     </span>
+                    <!--mobile-view-->
+                    <div class="Mobile-view d-flex justify-content-between align-content-center">
+                        <a href="Home.html" class="spaceleft text-decoration-none text-dark btn bg-color d-flex align-self-center justify-self-center">
+                            <div class="d-flex align-items-center">
+                                <img src="./image/home.png" width="24px" height="24px" class="align-self-start justify-self-end img-fluid" alt="home icon" /> 
+                                <p class="align-items-center justify-self-center pt-1 pb-0"> Home </p> 
+                            </div>
+                        </a>
+                        <div class="d-flex mobile-view ml-1 align-self-center">
+                            <a href="Home.html" class=" text-decoration-none text-dark btn bg-color d-flex rounded-pill mobile-view">
+                                <p class="align-self-center justify-self-center">All</p>  
+                            </a>
+                            <a href="Home.html" class="text-decoration-none text-dark btn bg-color d-flex rounded-pill mobile-view">
+                                 <p> Romance </p>
+                            </a>
+                            <a href="Home.html" class="text-decoration-none text-dark btn bg-color d-flex rounded-pill mobile-view">
+                               <p> Comedy </p>
+                            </a>
+                        </div>
+                    </div>
                     <div class="row"> 
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe width="410px" height="200px" src="https://www.youtube.com/embed/elx0d4tLEU0" 
+                                    <iframe class="short-videos" src="https://www.youtube.com/embed/elx0d4tLEU0" 
                                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                                     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -110,7 +130,7 @@
                                     <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                <iframe width="410px" height="200px" 
+                                <iframe class="short-videos" 
                                 src="https://www.youtube.com/embed/Z-tWViGvrFc" title="YouTube video player" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -123,7 +143,7 @@
                                 <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe  width="410px" height="200px" 
+                                    <iframe class="short-videos"
                                     src="https://www.youtube.com/embed/bMMBM6g7oTw" title="YouTube video player" frameborder="0" allow="accelerometer; 
                                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -147,7 +167,7 @@
                     </span>
                     <div class="row"> 
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe   width="410px" height="200px"
+                                    <iframe class="short-videos"
                                     src="https://www.youtube.com/embed/zJ6rQmKVdrE" title="YouTube video player" frameborder="0" allow="accelerometer;
                                      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -160,7 +180,7 @@
                                 <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe  width="410px" height="200px"
+                                    <iframe class="short-videos"
                                         src="https://www.youtube.com/embed/qgUcw7LhxeA" title="YouTube video player" frameborder="0" allow="accelerometer;
                                         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -173,7 +193,7 @@
                                 <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe  width="410px" height="200px"
+                                    <iframe  class="short-videos"
                                     src="https://www.youtube.com/embed/as_5dxTdass" title="YouTube video player" frameborder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -197,7 +217,7 @@
                     </span>
                     <div class="row"> 
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe   width="410px" height="200px"
+                                    <iframe class="short-videos"
                                     src="https://www.youtube.com/embed/n3qw7lZzbkM" title="YouTube video player" frameborder="0" allow="accelerometer;
                                      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -210,7 +230,7 @@
                                 <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe   width="410px" height="200px"
+                                    <iframe  class="short-videos"
                                     src="https://www.youtube.com/embed/2P3jnZ7Mf4c" title="YouTube video player" frameborder="0" allow="accelerometer; 
                                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -223,7 +243,7 @@
                                 <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-4 pt-3">
-                                    <iframe  width="410px" height="200px"
+                                    <iframe class="short-videos"
                                     src="https://www.youtube.com/embed/JxfneEvqT4I" title="YouTube video player" frameborder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="d-flex justify-content-between mb-0">
@@ -237,10 +257,34 @@
                             </div>
                     </div>
             </div>
+            <!--Fourth row for mobile devices -->
+            <div class="container mobile--features-btns">
+                <div>
+                    <a href="#" class="text-bg-dark bg-orange btn w-50 rounded-pill mt-5 mx-auto d-block">Load More</a>
+                </div>
+                <div class="d-flex justify-content-between mt-5">
+                    <a href="Home.html" class="d-flex flex-column align-content-center" >
+                        <img src="./image/home.png" width="24px" height="24px" class="bg-color align-self-center" alt="home background"/>
+                        <p>Home</p>
+                    </a>
+                    <div class="d-flex flex-column align-content-center" >
+                        <img src="./image/upload.png" width="24px" height="24px" class="bg-color align-self-center" alt="upload background"/>
+                        <p>Upload</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                        <img src="./image/plus.png" width="30px" height="30px" class="align-self-center" alt="plus background"/>
+                    </div>
+                    <div class="d-flex flex-column align-content-center">
+                        <img src="./image/video-play.png" width="24px" height="24px"  class="bg-color align-self-center" alt="video play background"/>
+                        <p>subscriptions</p>
+                    </div>
+                    <div class="d-flex flex-column align-content-center">
+                        <img src="./image/library.png" width="24px" height="24px" class="bg-color img-fluid align-self-center" alt="user background"/>
+                        <p>Library</p>
+                    </div>
+                </div>
+            </div>
          </main>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./js/myscript.js"></script>

@@ -7,7 +7,7 @@
     <title>home-page</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
         <!--Toggle content-->
@@ -41,7 +41,7 @@
             </div>
         </div>
         <!--navbar-->
-        <div class="container">
+        <div class="container navbar-cont">
             <div class="d-flex justify-content-between">
                     <div class="d-flex">
                             <div id="main" class="align-self-center">
@@ -64,11 +64,25 @@
                     </div>
             </div>
         </div>
+        <!--Nav for Mobile view-->
+        <div class="container Mobile mt-4">
+            <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="./image/logo2.png" class="align-self-center" width="60px" height="29.21px" alt="logo" />
+                    </div>
+                    <div class="d-flex align-self-center justify-content-between">
+                        <img src="./image/radar.png" class="mx-3  new" width="24px" height="24px" alt="notify icon"/>
+                        <img src="./image/notification.png" class="mx-3" width="24px" height="24px" alt="notify icon"/>
+                        <img src="./image/search (2).png" class="mx-3  new" width="24px" height="24px" alt="notify icon"/>
+                        <img src="./image/tee.png" class="new" width="24px" height="24px" alt="profile icon"/>
+                    </div>
+            </div>
+       </div>
         <!--content-->
         <div class="container">
                         <div class="row">
                                 <div class="col-sm-12 col-md-6 col-lg-6 pt-3">
-                                    <iframe width="552px" height="323px" src="https://www.youtube.com/embed/qgUcw7LhxeA" title="YouTube video player" frameborder="0" allow="accelerometer;
+                                    <iframe class="videos"  src="https://www.youtube.com/embed/qgUcw7LhxeA" title="YouTube video player" frameborder="0" allow="accelerometer;
                                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="d-flex justify-content-between">
                                         <div>
@@ -97,10 +111,10 @@
                                             <p class="mb-0">#food</p>
                                             <span class="text-muted">
                                                 1k views Rating: 
-                                                <img src="./image/yellowstar.png" width="16px" height="16px" alt="star icon"/> 
-                                                <img src="./image/yellowstar.png" width="16px" height="16px" alt="star icon"/> 
-                                                <img src="./image/yellowstar.png" width="16px" height="16px" alt="star icon"/> 
-                                                <img src="./image/whitestar.png" width="16px" height="16px" alt="star icon"/> 
+                                                <img src="./image/yellowstar.png" class="star"  alt="star icon"/> 
+                                                <img src="./image/yellowstar.png" class="star" alt="star icon"/> 
+                                                <img src="./image/yellowstar.png" class="star"  alt="star icon"/> 
+                                                <img src="./image/whitestar.png" class="star" alt="star icon"/> 
                                             </span>
                                             <p>2 months ago</p>
                                         </div>
