@@ -18,12 +18,9 @@
         <div class="wrapper">
             <nav>
                 <div class="logo">
-                    <img src="assets/images/header_logo.png" alt="" />
+                    <img src="{% static 'assets/images/header_logo.png' %}" alt="" />
                 </div>
 
-                <div class="mobile-logo">
-                    <img src="assets/images/mobile-logo.png" alt="" />
-                </div>
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -42,249 +39,370 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="mobile-nav">
+                <div class="menu-icon">
+                    <img src="{% static 'assets/images/mobile_menu.png' %}" alt="" />
+                </div>
 
-            <div class="hero-section">
-                <div class="left">
+                <div class="mobile-logo">
+                    <img src="{% static 'assets/images/mobile-logo.png' %}" alt=" " />
+                </div>
+            </nav>
+
+            <div class="mobile-menu-container ">
+                <div class="close-icon ">
+                    <img src="{% static 'assets/images/close-menu.svg' %} " alt=" " />
+                </div>
+                <ul>
+                    <li>
+                        <a href="# ">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="# ">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="# ">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="# " class="guest ">Continue as guest</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-section ">
+                <div class="left ">
                     <h1>Watch amazing films and connect with College students</h1>
                     <p>
                         Colflix provides the best platform for college students to watch, share and upload short movies.
                     </p>
-                    <a href="" class="sign-in">Sign In</a>
-                    <a href="" class="sign-up">Sign Up</a>
+                    <div class="mobile-characters ">
+                        <img src="{% static 'assets/images/mobile-style.png' %} " alt=" " />
+                    </div>
+                    <a href=" " class="sign-in ">Sign In</a>
+                    <a href=" " class="sign-up ">Sign Up</a>
                 </div>
 
-                <div class="right">
-                    <img src="assets/images/Style.png" alt="" />
-                </div>
-
-                <div class="mobile-characters">
-                    <img src="assets/images/mobile-style.png" alt="" />
+                <div class="right ">
+                    <img src="{%static 'assets/images/Style.png' %} " alt=" " />
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="first-line">
-        <img src="assets/images/line.svg" alt="" />
+    <div class="first-line ">
+        <img src="{%static 'assets/images/line.svg'%} " alt=" " />
     </div>
 
-    <div class="movie-section">
+    <div class="movie-section ">
+        <div class="mobile-line ">
+            <img src="{%static 'assets/images/desktop-line.png' %} " alt=" " />
+        </div>
         <h1>100+ short movies, 10+ new movies every week</h1>
         <p>Movies from any genre: action, fiction, drama, comedy ,etc</p>
-        <img src="assets/images/arrow-left.png" class="left-arrow" alt="" />
-        <div class="movie-container">
-            <div class="first-movie">
-                <div class="first-movie-up">
-                    <img src="assets/images/movie1.png" alt="" />
+        <img src="{%static 'assets/images/arrow-left.png' %} " class=" left-arrow " alt=" " />
+        <div class="movie-container ">
+            <div class="first-movie ">
+                <div class="first-movie-up ">
+                    <img src="{%static 'assets/images/movie1.png' %} " alt=" " />
+
+                    <div class="play ">
+                        <img src="{%static 'assets/images/desktop-play.png' %} " alt=" " />
+                    </div>
                 </div>
-                <div class="first-movie-down">
+                <div class="first-movie-down ">
                     <h3>THE GREAT DEBATERS</h3>
                     <p>BY SIMON ADOH</p>
                 </div>
             </div>
 
-            <div class="second-movie">
-                <div class="second-movie-up">
-                    <img src="assets/images/movie2.png" alt="" />
+            <div class="second-movie ">
+                <div class="second-movie-up ">
+                    <img src="{%static'assets/images/movie2.png' %} " alt=" " />
+                    <div class="play ">
+                        <img src="{%static 'assets/images/desktop-play.png' %} " alt=" " />
+                    </div>
                 </div>
-                <div class="second-movie-down">
+                <div class="second-movie-down ">
                     <h3>THE STUDENT</h3>
                     <p>BY SANDRA BELL</p>
                 </div>
             </div>
 
-            <div class="third-movie">
-                <div class="third-movie-up">
-                    <img src="assets/images/movie3.png" alt="" />
+            <div class="third-movie ">
+                <div class="third-movie-up ">
+                    <img src="{%static 'assets/images/movie3.png' %} " alt=" " />
+                    <div class="play ">
+                        <img src="{%static 'assets/images/desktop-play.png' %} " alt=" " />
+                    </div>
                 </div>
-                <div class="third-movie-down">
+                <div class="third-movie-down ">
+                    <h3>STUDENT OF THE YEAR</h3>
+                    <p>BY JOHN EDO</p>
+                </div>
+            </div>
+
+            <div class="mobile-movie ">
+                <div class="mobile-movie-up ">
+                    <img src="{%static 'assets/images/mobile-movie1.png' %} " alt=" " />
+                    <div class="mobile-play ">
+                        <img src="{%static 'assets/images/mobile-play.png' %} " alt=" " />
+                    </div>
+                </div>
+
+                <div class="mobile-movie-down ">
                     <h3>STUDENT OF THE YEAR</h3>
                     <p>BY JOHN EDO</p>
                 </div>
             </div>
         </div>
-        <img src="assets/images/arrow-right.png" class="right-arrow" alt="" />
-        <h2>Search Movies From Any Genre</h2>
+        <img src="{%static 'assets/images/arrow-right.png' %} " class=" right-arrow " alt=" " />
+        <!-- <a href=" ">Search Movies From Any Genre</a> -->
     </div>
 
-    <div class="share-section">
-        <div class="right-share">
+    <div class="second-line ">
+        <img src="{%static 'assets/images/line.svg' %} " alt=" " />
+    </div>
+
+    <div class="share-section ">
+        <div class="mobile-line2 ">
+            <img src="{%static 'assets/images/desktop-line.png'%} " alt=" " />
+        </div>
+        <div class="mobile-share-section ">
+            <img src="{%static 'assets/images/mobile-rafiki.png' %} " alt=" " />
+        </div>
+        <div class="right-share ">
             <h1>Share movies that you enjoy</h1>
             <p>Recommend good movies and share with other college students</p>
-            <a href="" class="sign-up">Sign Up</a>
+            <a href=" " class="sign-up ">Sign Up</a>
         </div>
 
-        <div class="left-share">
-            <img src="assets/images/rafiki.png" alt="" />
+        <div class="mobile-share ">
+            <a href=" ">Sign Up</a>
         </div>
 
-        <div class="mobile-share-section">
-            <img src="assets/images/mobile-rafiki.png" alt="" />
+        <div class="left-share ">
+            <img src="{%static 'assets/images/rafiki.png' %} " alt=" " />
         </div>
     </div>
 
-    <div class="review-section">
+    <div class="third-line ">
+        <img src="{%static 'assets/images/line.svg' %} " alt=" " />
+    </div>
+    <div class="mobile-line3 ">
+        <img src="{%static 'assets/images/desktop-line.png' %} " alt=" " />
+    </div>
+    <div class="review-section ">
         <h1>Read reviews made by other college students</h1>
 
-        <img src="assets/images/arrow-left.png" class="left-arrow" alt="" />
+        <img src="{%static 'assets/images/arrow-left.png' %} " class=" left-arrow " alt=" " />
 
-        <div class="review-container">
-            <div class="movie-review1">
-                <div class="first-review-up">
-                    <img src="assets/images/movie4.png" alt="" />
+        <div class="review-container ">
+            <div class="movie-review1 ">
+                <div class="first-review-up ">
+                    <img src="{%static 'assets/images/movie4.png' %} " alt=" " />
+                    <div class="play ">
+                        <img src="{%static 'assets/images/desktop-play.png' %} " alt=" " />
+                    </div>
                 </div>
-                <div class="first-review-down">
+                <div class="first-review-down ">
                     <h3>LE NOUVEAU</h3>
-                    <div class="rating">
+                    <div class="rating ">
                         <p>Rating:</p>
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
                     </div>
                     <p>BY SIMON ADOH</p>
                 </div>
             </div>
 
-            <div class="movie-review2">
-                <div class="second-review-up">
-                    <img src="assets/images/movie2.png" alt="" />
+            <div class="movie-review2 ">
+                <div class="second-review-up ">
+                    <img src="{%static 'assets/images/movie2.png' %} " alt=" " />
+                    <div class="play ">
+                        <img src="{%static 'assets/images/desktop-play.png' %} " alt=" " />
+                    </div>
                 </div>
-                <div class="second-review-down">
+                <div class="second-review-down ">
                     <h3>THE STUDENT:</h3>
 
-                    <div class="rating">
+                    <div class="rating ">
                         <p>Rating:</p>
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
                     </div>
                     <p>BY SANDRA BELL</p>
                 </div>
             </div>
 
-            <div class="movie-review3">
-                <div class="third-review-up">
-                    <img src="assets/images/movie3.png" alt="" />
+            <div class="movie-review3 ">
+                <div class="third-review-up ">
+                    <img src="{%static 'assets/images/movie3.png' %} " alt=" " />
+                    <div class="play ">
+                        <img src="{%static 'assets/images/desktop-play.png' %} " alt=" " />
+                    </div>
                 </div>
-                <div class="third-review-down">
+                <div class="third-review-down ">
                     <h3>STUDENT OF THE YEAR</h3>
-                    <div class="rating">
+                    <div class="rating ">
                         <p>Rating:</p>
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
-                        <img src="assets/images/star.svg" alt="" />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                        <img src="{%static 'assets/images/star.svg'%} " alt=" " />
                     </div>
                     <p>BY JOHN EDO</p>
                 </div>
             </div>
         </div>
-        <img src="assets/images/arrow-right.png" class="right-arrow" alt="" />
 
-        <div class="get-started">
-            <h4>Create an account to get started</h4>
+        <div class="mobile-review ">
+            <div class="mobile-review-up ">
+                <img src="{%static 'assets/images/mobile-movie2.png' %} " alt=" " />
+                <div class="mobile-review-play ">
+                    <img src="{%static 'assets/images/mobile-play.png' %} " alt=" " />
+                </div>
+            </div>
+            <div class="mobile-review-down ">
+                <h3>STUDENT OF THE YEAR</h3>
+                <div class="rating ">
+                    <p>Rating:</p>
+                    <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                    <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                    <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                    <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                    <img src="{%static 'assets/images/star.svg'%} " alt=" " />
+                </div>
+                <p>BY SANDRA BELL</p>
+            </div>
         </div>
+        <img src="{%static 'assets/images/arrow-right.png' %} " class=" right-arrow " alt=" " />
     </div>
 
-    <div class="streaming-section">
-        <div class="left-streaming">
+    <!-- <div class="get-started ">
+        <a href=" ">Create an account to get started</a>
+    </div> -->
+
+    <div class="fourth-line ">
+        <img src="{%static 'assets/images/line.svg' %} " alt=" " />
+    </div>
+
+    <div class="streaming-section ">
+        <div class="left-streaming ">
+            <div class="mobile-line4 ">
+                <img src="{%static 'assets/images/desktop-line.png' %} " alt=" " />
+            </div>
             <h1>The best streaming platform for college students</h1>
             <p>
                 With Colflix you can watch movies uploaded by others and also upload your own to share with numerous students for free. Register today!
             </p>
-            <a href="" class="sign-up">Sign Up</a>
+            <div class="mobile-streaming-section ">
+                <img src="{%static 'assets/images/mobile-character.png' %} " alt=" " />
+            </div>
+            <a href=" " class="sign-up ">Sign Up</a>
+            <div class="mobile-line5 ">
+                <img src="{%static 'assets/images/mobile-line2.png' %} " alt=" " />
+            </div>
         </div>
 
-        <div class="right-streaming">
-            <img src="assets/images/rafiki_night.png" alt="" />
-        </div>
-
-        <div class="mobile-streaming-section">
-            <img src="assets/images/mobile-character.png" alt="" />
+        <div class="right-streaming ">
+            <img src="{%static 'assets/images/rafiki_night.png' %} " alt=" " />
         </div>
     </div>
 
     <footer>
-        <div class="left-footer">
+        <div class="left-footer ">
             <h3>COLFLIX</h3>
             <p>
                 Colflix is a movie streaming platform that enables college students stream, share and upload short movies under 15mins while also providing features that promote interactions with other college students.
             </p>
-            <img src="assets/images/facebook.png" alt="" />
-            <img src="assets/images/insta.png" alt="" />
-            <img src="assets/images/twitter.png" alt="" />
-            <img src="assets/images/telegram.png" alt="" />
+            <img src="{%static 'assets/images/facebook.png' %} " class=" first " alt=" " />
+            <img src="{%static 'assets/images/insta.png' %} " alt=" " />
+            <img src="{%static 'assets/images/twitter.png' %} " alt=" " />
+            <img src="{%static 'assets/images/telegram.png' %} " alt=" " />
         </div>
 
-        <div class="right-footer">
-            <div class="site-map">
+        <div class="right-footer ">
+            <div class="site-map ">
                 <h3>SITEMAP</h3>
                 <ul>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="# ">About Us</a>
                     </li>
 
                     <li>
-                        <a href="#">Services</a>
+                        <a href="# ">Services</a>
                     </li>
 
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="# ">Contact Us</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="product">
+            <div class="product ">
                 <h3>PRODUCT</h3>
                 <ul>
                     <li>
-                        <a href="#">Features</a>
+                        <a href="# ">Features</a>
                     </li>
 
                     <li>
-                        <a href="#">Feedback</a>
+                        <a href="# ">Feedback</a>
                     </li>
 
                     <li>
-                        <a href="#">Customers</a>
+                        <a href="# ">Customers</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="help">
+            <div class="help ">
                 <h3>HELP</h3>
                 <ul>
                     <li>
-                        <a href="#">Getting Started</a>
+                        <a href="# ">Getting Started</a>
                     </li>
 
                     <li>
-                        <a href="#">FAQ</a>
+                        <a href="# ">FAQ</a>
                     </li>
 
                     <li>
-                        <a href="#">Download</a>
+                        <a href="# ">Download</a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
-    <div class="line">
-        <img src="assets/images/line2.svg" alt="" />
+
+    <div class="social ">
+        <img src="{%static 'assets/images/facebook.png' %} " class=" first " alt=" " />
+        <img src="{%static 'assets/images/insta.png' %} " alt=" " />
+        <img src="{%static 'assets/images/twitter.png' %} " alt=" " />
+        <img src="{%static 'assets/images/telegram.png' %} " alt=" " />
+    </div>
+    <div class="fifth-line ">
+        <img src="{%static 'assets/images/line.svg' %} " alt=" " />
+    </div>
+    <div class="mobile-line6 ">
+        <img src="{%static 'assets/images/mobile-line2.png' %} " alt=" " />
+    </div>
+    <div class="footer-logo ">
+        <img src="{%static assets/images/footer_logo.png' %} " ' alt=" " />
+        <a href=" " class="footer_sign-up ">Sign Up</a>
     </div>
 
-    <div class="footer-logo">
-        <img src="assets/images/footer_logo.png" alt="" />
-        <a href="" class="footer_sign-up">Sign Up</a>
+    <div class="mobile-footer-logo ">
+        <img src="{%static 'assets/images/mobile-footer-logo.png ' %} " alt=" " />
+        <a href=" " class="footer_sign-up ">Sign Up</a>
     </div>
-
-    <div class="mobile-footer-logo">
-        <img src="assets/images/mobile-footer-logo.png" alt="" />
-        <a href="" class="footer_sign-up">Sign Up</a>
-    </div>
-    <script src="script.js"></script>
+    <script src="{%static 'assets/js/landing_page.js ' %}"></script>
 </body>
 
 </html>
