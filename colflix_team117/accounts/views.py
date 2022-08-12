@@ -20,7 +20,7 @@ class TokenGenerator(PasswordResetTokenGenerator):
             text_type(user.pk) + text_type(timestamp) + text_type(user.is_active)  
         )  
         
-class Register(View):
+class SignUp(View):
     form_class = RegisterForm
     template_name = 'register.html'
     account_activation_token = TokenGenerator() 
@@ -60,7 +60,7 @@ class Register(View):
                 #user.save()
 """
 
-class Login(View):
+class SignIn(View):
     form_class = LoginForm
     template_name = 'login.html'
     
