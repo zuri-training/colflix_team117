@@ -6,14 +6,4 @@ colflix_team117/core/__pycache__
 
 env/
 
-colflix_team117/colflix_team117/__pycache__
-
-accounts/_ _pycache _ _
-accounts/migrations
-
-core/_ _pycache _ _
-core/migrations
-
-colflix_team117/_ _ pycache _ _
-
-env/
+.vscode

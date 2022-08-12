@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import Video, Category
 
-# Register your models here.
+
+@admin.register(Video)
+class AuthorAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author', 'description', 'published')
+    #prepopulated_fields = ()
+    
+admin.site.register(Category)
