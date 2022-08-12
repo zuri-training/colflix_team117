@@ -6,11 +6,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=" {% static 'css/landing_page.css' %} "/>
+    <link rel="stylesheet" href="{% static 'css/landing_page.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <title>Document</title>
+    <title>Landing page</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="guest">Continue as guest</a>
+                        <a href="{% url 'index' %}" class="guest">Continue as guest</a>
                     </li>
                 </ul>
             </nav>
@@ -49,7 +49,10 @@
                     <p>
                         Colflix provides the best platform for college students to watch, share and upload short movies.
                     </p>
-                    <a href="" class="sign-in">Sign In</a>
+
+                    <a href="sign_in" class="sign-in">Sign In</a> <!--BEFORE-->
+                    <a href="{% url 'logout_req' %}" class="sign-in">Sign In</a><!--AFTER-->
+
                     <a href="" class="sign-up">Sign Up</a>
                 </div>
 
