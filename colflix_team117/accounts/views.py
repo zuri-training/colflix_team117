@@ -53,7 +53,7 @@ class SignUp(View):
             )
             email.send()
             return HttpResponse('Please confirm your email address to complete the registration')  
-        return redirect('register')
+        return redirect('/')
 """
 #create and user with the inputed credentialsto the db
                 user = User.objects.create_user(name=name, username=u_name, password=pswd, email=mail)
@@ -79,10 +79,10 @@ class SignIn(View):
         #if user does exists
         if user is not None:
             auth.login(request, user)
-            return redirect('/')
+            return redirect('index')
         else:
             messages.info(request, 'wrong username or password')
-            return redirect('login')
+            return redirect('index')
         
 def logout_req(request):
     auth.logout(request)
