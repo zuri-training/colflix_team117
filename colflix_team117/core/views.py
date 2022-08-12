@@ -9,5 +9,5 @@ class LandingPageView(TemplateView):
     
 class HomePageView(TemplateView): 
     template_name = 'index.html' 
-    serializer_class = VideoSerializer
-    
+    queryset = Video.objects.order_by('-published')
+    context_object_name = 'video_list'
