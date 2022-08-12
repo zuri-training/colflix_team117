@@ -19,6 +19,7 @@
         border-radius: 10px;
         padding: 50px 84px;
         box-shadow: -4px 4px 10px #777;
+        width: 450px;
       }
 
       .sign-in-btn {
@@ -31,10 +32,12 @@
       }
 
 <<<<<<< HEAD
-</form>
-=======
       .q-text {
+=======
+      <<<<<<< HEAD </form > ======= .q-text {
+>>>>>>> main
         padding-top: 10px;
+        text-align: center;
       }
 
       a:link {
@@ -42,13 +45,31 @@
       }
 
       .forgrt-pw {
-        padding: 50px 20px;
+        padding: 50px 50px 50px 50px;
+        padding-right: 50px;
       }
 
       h3 {
         position: absolute;
         left: 40px;
         top: 110px;
+      }
+
+      #outside-form {
+        font-size: 15px;
+      }
+
+      .rememberMe {
+        padding-right: 40px;
+      }
+
+      #rememberMe {
+        border: 1px solid #ff6347;
+      }
+
+      a {
+        color: unset;
+        text-decoration: none;
       }
     </style>
     <title></title>
@@ -63,7 +84,7 @@
   <body>
     <div class="top">
       <div>
-        <p>Previous</p>
+        <p>&#8592 Previous</p>
       </div>
       <div>
         <svg
@@ -140,9 +161,9 @@
         <!-- log_form is just a variable name. its is form in most cases-->
         <div class="content">
           <div class="form-group">{{log_form.as_p}}</div>
-          <div class="form-group">
+          <div class="form-group outside-form" id="outside-form">
             <input type="checkbox" value="lsRememberMe" id="rememberMe" />
-            <label for="rememberMe">Remember me</label>
+            <label class="rememberMe" for="rememberMe">Remember me</label>
             <a class="forget-pw" href="">Forgot password?</a>
           </div>
           <div class="form-group sign-in-btn">
@@ -159,4 +180,7 @@
     ></script>
   </body>
 </html>
+<<<<<<< HEAD
+
+=======
 >>>>>>> main
