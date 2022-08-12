@@ -1,0 +1,300 @@
+body {
+    background: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+p, .text-muted {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Mobile{
+    display: none;
+}
+
+.Mobile-view{
+    display: none;
+}
+
+#music--category{
+    padding-bottom: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #ABACB4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background: rgba(255, 99, 71, 1);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: orange;
+  }
+
+  .bg-orange {
+    background-color: orange;
+  }
+
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  aside{
+    background: #CDCDD2;
+  }
+
+  #flex-box{
+    margin-left: -1000px;
+  }
+
+  .new, .profile {
+    display: none;
+  }
+
+  .bg-color{
+    background: rgba(205, 205, 210, 1);
+  }
+
+  .short-videos{
+    max-width: 100% ;
+    width:410px; 
+    height:200px;
+  }
+
+  .videos{
+    width:552px;
+    height:323px;
+    max-width: 100%;
+  }
+
+  .video-two{
+    width:410px;
+    height:200px;
+    max-width: 100%;
+  }
+
+  .star{
+    max-width: 100%;
+    width:16px;
+    height:16px;
+  }
+
+  .Mobile-view {
+    display: none !important;
+  }
+
+  .mobile--features-btns{
+    display: none;
+  }
+
+  .bg-color--mobile-nav{
+    background:#575A69
+  }
+
+  .hover--mobile-nav:hover {
+    background-color: orange;
+  }
+
+  .explore--videos{
+    width:260px;
+    height:315px;
+  }
+  
+
+  @media (max-width: 320px) {
+    .search-bar, .upload,
+     .notify, .profile,
+     .navbar-cont {
+      display: none;
+    }
+
+     .upload-file{
+      display: none;
+    }
+
+    .mobile--features-btns{
+      display: block;
+    }
+
+    .new, .Mobile-view{
+      display: inline-flex !important;
+    }
+
+    .Mobile{
+      display: block;
+    }
+
+  .searchbar{
+    height: 30px;
+    width: 388px;
+    border-radius: 4px;
+    max-width: 100%;
+
+  }
+
+  .explore--videos{
+    width:260px;
+    height:315px;
+    max-width: 100%;
+  }
+  
+ 
+  }
+ 
+  @media (max-width: 380px) {
+    .search-bar, .upload,
+     .notify, .profile,
+     .navbar-cont {
+      display: none;
+    }
+
+     .upload-file{
+      display: none;
+    }
+
+    .mobile--features-btns{
+      display: block;
+    }
+
+    .new, .Mobile-view{
+      display: inline-flex !important;
+    }
+
+    .Mobile{
+      display: block;
+    }
+
+    .spaceleft{
+      margin-left:-2px;
+      padding: 5px 8px;
+    } 
+
+    .mobile-view{
+     padding-left: 10px;
+    }
+
+    .searchbar{
+      height: 30px;
+      width: 258px;
+      border-radius: 4px;
+      max-width: 100%;
+  
+    }
+
+    .explore--videos{
+      width:560px;
+      height:315px;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .search-bar, .upload,
+     .notify, .profile,
+     .navbar-cont {
+      display: none;
+    }
+
+     .upload-file{
+      display: none;
+    }
+
+    .mobile--features-btns{
+      display: block;
+    }
+
+    .new, .Mobile-view{
+      display: inline-flex !important;
+    }
+
+    .Mobile{
+      display: block;
+    }
+
+    .spaceleft{
+      margin-left:4px;
+      margin-right:-8px;
+      padding: 5px 8px;
+    } 
+
+    .mobile-view{
+     padding-left: 19px;
+    }
+
+    .searchbar{
+      height: 30px;
+      width: 458px;
+      border-radius: 4px;
+      max-width: 100%;
+  
+    }
+
+    .explore--videos{
+      width:560px;
+      height:315px;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+
+    .sidebar a {
+      font-size: 18px;
+    }
+
+    .new {
+      display: block;
+    }
+
+    input[type="file"], .search-bar {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575.98px) { 
+    .sidebar ,  #main{
+      display: none;
+    }
+
+  
+  }
+
