@@ -130,11 +130,11 @@
     </div>
     <h3>Sign Up</h3>
     <div class="container">
-      <form action="login" method="POST">
+      <form action="sign-up" method="POST">
         {% csrf_token %}
         <!-- log_form is just a variable name. its is form in most cases-->
         <div class="content">
-          <div class="form-group">{{reg_form.as_p}}</div>
+          <div class="form-group">{{form.as_p}}</div>
 
           <div class="form-group sign-in-btn">
             <input class="btn" type="submit" value="Sign Up" />

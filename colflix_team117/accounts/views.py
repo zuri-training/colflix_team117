@@ -20,7 +20,7 @@ class TokenGenerator(PasswordResetTokenGenerator):
             text_type(user.pk) + text_type(timestamp) + text_type(user.is_active)  
         )  
         
-class Register(View):
+class SignUp(View):
     form_class = RegisterForm
     template_name = 'register.html'
     account_activation_token = TokenGenerator() 
@@ -53,14 +53,14 @@ class Register(View):
             )
             email.send()
             return HttpResponse('Please confirm your email address to complete the registration')  
-        return redirect('register')
+        return redirect('/')
 """
 #create and user with the inputed credentialsto the db
                 user = User.objects.create_user(name=name, username=u_name, password=pswd, email=mail)
                 #user.save()
 """
 
-class Login(View):
+class SignIn(View):
     form_class = LoginForm
     template_name = 'login.html'
     
@@ -79,10 +79,10 @@ class Login(View):
         #if user does exists
         if user is not None:
             auth.login(request, user)
-            return redirect('/')
+            return redirect('index')
         else:
             messages.info(request, 'wrong username or password')
-            return redirect('login')
+            return redirect('index')
         
 def logout_req(request):
     auth.logout(request)
