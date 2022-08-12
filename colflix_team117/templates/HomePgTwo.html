@@ -7,35 +7,35 @@
     <title>homeTwo</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 <body>
-    <!--Toggle content-->
-    <div class="container-fluid">
+     <!--Toggle content-->
+     <div class="container-fluid">
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="index.html" class="mt-5 border-bottom">
-                <img src="./image/home.png" alt="home" width="30" height="30">                                     
+            <a href="Home.html" class="mt-5 border-bottom">
+                <img src="./assets/images/home.png" alt="home" width="30" height="30">                                     
                 Home
             </a>
             <a href="Genre.html" class="mt-5 border-bottom">
-                <img src="./image/compass.png" alt="home" width="30" height="30">
-                     Explore
+                <img src="./assets/images/compass.png" alt="home" width="30" height="30">
+                    Explore
             </a>
             <a href="#" class="mt-5 border-bottom"> 
-                <img src="./image/profile.png" alt="home" width="30" height="30">
+                <img src="./assets/images/profile.png" alt="home" width="30" height="30">
                 Profile
             </a></a>
             <a href="#" class="mt-5 border-bottom">
-                <img src="./image/media.png" alt="home" width="30" height="30">
+                <img src="./assets/images/media.png" alt="home" width="30" height="30">
                 Library
             </a>
             <a href="#" class="mt-5 border-bottom">
-                <img src="./image/chart.png" alt="home" width="30" height="30">
-               Trending
+                <img src="./assets/images/chart.png" alt="home" width="30" height="30">
+            Trending
             </a>
             <a href="#" class="mt-5 border-bottom">
-                <img src="./image/settings.png" alt="home" width="30" height="30">
+                <img src="./assets/images/settings.png" alt="home" width="30" height="30">
                 Setting
             </a>
         </div>
@@ -46,10 +46,10 @@
                 <div class="d-flex">
                         <div id="main" class="align-self-center">
                             <button class="openbtn" onclick="openNav()">
-                                <img src="./image/menuTwo.png" alt="Menu icon" width="42px" height="42px">
+                                <img src="./assets/images/menuTwo.png" alt="Menu icon" width="42px" height="42px">
                             </button>  
                         </div> 
-                        <img src="./image/logo2.png" class="align-self-center mx-5" width="144px" height="60px" alt="logo" />
+                        <img src="./assets/images/logo2.png" class="align-self-center mx-5" width="144px" height="60px" alt="logo" />
                 </div>
                 <div class="align-self-center">
                         <input class="search rounded-pill" width="446px"  height="40px" type="search" placeholder="Search titles, people,genres." aria-label="Search">
@@ -57,27 +57,36 @@
                 <div class="d-flex align-self-center justify-content-around">
                     <label for="file">
                         <input type="file" class="bg-dark " id="file" style="display: none;">        
-                        <img src="./image/upload.png" class="bg-dark " width="24px" height="24px" alt="upload icon"/>
+                        <img src="./assets/images/upload.png" class="bg-dark " width="24px" height="24px" alt="upload icon"/>
                     </label>
-                    <img src="./image/notify.png" class="mx-3 bg-dark" width="24px" height="24px" alt="notify icon"/>
-                    <img src="./image/profile.png" class="bg-dark " width="24px" height="24px" alt="profile icon"/>
+                    <img src="./assets/images/notify.png" class="mx-3 bg-dark" width="24px" height="24px" alt="notify icon"/>
+                    <img src="./assets/images/profile.png" class="bg-dark " width="24px" height="24px" alt="profile icon"/>
                 </div>
         </div>
     </div>
-    <!--Nav for Mobile view-->
-    <div class="container Mobile mt-4">
-        <div class="d-flex justify-content-between">
-                <div>
-                    <img src="./image/logo2.png" class="align-self-center" width="60px" height="29.21px" alt="logo" />
+    <!--navbar-->
+     <!--mobile navbar-->
+    <div class="container Mobile">
+        <div class="d-flex justify-content-between mt-4">
+                <div class="d-flex">
+                        <div id="main" class="align-self-center">
+                            <a href="Home.html"></a>  
+                        </div> 
+                        <img src="./assets/images/logo2.png" class="align-self-center" width="60px" height="29.21px" alt="logo" />
                 </div>
-                <div class="d-flex align-self-center justify-content-between">
-                    <img src="./image/radar.png" class="mx-3  new" width="24px" height="24px" alt="notify icon"/>
-                    <img src="./image/notification.png" class="mx-3" width="24px" height="24px" alt="notify icon"/>
-                    <img src="./image/search (2).png" class="mx-3  new" width="24px" height="24px" alt="notify icon"/>
-                    <img src="./image/tee.png" class="new" width="24px" height="24px" alt="profile icon"/>
+                <div class="d-flex align-self-center justify-content-around">
+                    <label for="file">
+                        <input type="file" class="file" id="file" style="display: none;">        
+                        <img src="./assets/images/upload.png" class="bg-color" width="24px" height="24px" alt="upload icon"/>
+                    </label>
+                    <img src="./assets/images/notify.png" class="mx-3 bg-color" width="24px" height="24px" alt="notify icon"/>
+                    <img src="./assets/images/profile.png" class="bg-color" width="24px" height="24px" alt="profile icon"/>
                 </div>
         </div>
-   </div>
+        <div class="align-self-center mt-4">
+                <input class="search searchbar" type="search" placeholder="Search titles, people,genres.   🔍"  aria-label="Search">
+        </div>
+    </div>
     <!--content-->
     <div class="container">
         <div class="row">
@@ -88,8 +97,8 @@
                                     <div class="d-flex justify-content-between mb-0">
                                         <p class="fs-4">Easy drawing</p>
                                             <span>
-                                                <img src="./image/clock.png" alt="clock icon" width="19.48px" height="20px"/>
-                                                <img src="./image/downloaddown.png" class="mx-1" alt="download icon" width="13.63px" height="17px"/>
+                                                <img src="./assets/images/clock.png" alt="clock icon" width="19.48px" height="20px"/>
+                                                <img src="./assets/images/downloaddown.png" class="mx-1" alt="download icon" width="13.63px" height="17px"/>
                                             </span> 
                                     </div>
                                     <h6 class="mt-0 fs-6"><span class="border-end">Bayern Joe</span> 2k views</h6>
@@ -98,15 +107,15 @@
                     <div class="card text-dark bg-light mb-3">
                         <div class="card-header">Comments</div>
                         <div class="card-body d-flex">
-                            <img src="./image/profile2.png" class="bg-dark me-2" width="30px" height="30px" alt="profile2 icon"/>
+                            <img src="./assets/images/profile2.png" class="bg-dark me-2" width="30px" height="30px" alt="profile2 icon"/>
                             <p class="card-text">I really enjoyed this movie..🥳</p>
                         </div>
                         <div class="card-body d-flex">
-                            <img src="./image/profile2.png" class="bg-dark me-2" width="30px" height="30px" alt="profile2 icon"/>
+                            <img src="./assets/images/profile2.png" class="bg-dark me-2" width="30px" height="30px" alt="profile2 icon"/>
                             <p class="card-text">It was worth my while</p>
                         </div>
                         <div class="card-body d-flex">
-                            <img src="./image/profile2.png" class="bg-dark me-2" width="30px" height="30px" alt="profile2 icon"/>
+                            <img src="./assets/images/profile2.png" class="bg-dark me-2" width="30px" height="30px" alt="profile2 icon"/>
                             <p class="card-text">Thank you colifix!!!..</p>
                         </div>
                         <input type="text" class="form-control" placeholder="📷" />
@@ -116,6 +125,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="./js/myscript.js"></script>
+    <script src="./assets/js/myscript.js"></script>
 </body>
 </html>
