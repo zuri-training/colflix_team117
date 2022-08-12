@@ -50,6 +50,11 @@ All branch names should be prefix with *bn_* which stands for `backend` example 
 -
 -
 
+# Figma Board
+https://www.figma.com/file/E0uEnabABT2gfpW8JhDXwr/User-Research-col_films - Figjam File for User Research
+https://docs.google.com/document/d/1H2rVPbUQ-sQ9VbT7otFqzkabK3_AiGJuObvKBAxwPX8/edit - Research Plan
+https://www.figma.com/file/p5R5eyjeL8adUj302eCHdA/proj_team_117-team-library - Figma File for Designs
+
 # License
 MIT License
 
