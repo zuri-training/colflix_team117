@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/assets')] #static files are temporarily kept here
-STATIC_ROOT = os.path.join(BASE_DIR, 'templates/static')#django permanently keeps them here
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')#django permanently keeps them here
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
