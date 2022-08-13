@@ -80,8 +80,8 @@
                         <div class="mobile-characters ">
                             <img src="{% static 'images/mobile-style.png' %} " alt=" " />
                         </div>
-                        <a href=" " class="sign-in ">Sign In</a>
-                        <a href=" " class="sign-up ">Sign Up</a>
+                        <a href="{% url 'sign-in' %}" class="sign-in ">Sign In</a>
+                        <a href="{% url 'sign-up' %} " class="sign-up ">Sign Up</a>
                 </div>
 
                 <div class="right ">
@@ -173,11 +173,11 @@
             <div class="right-share ">
                 <h1>Share movies that you enjoy</h1>
                 <p>Recommend good movies and share with other college students</p>
-                <a href=" " class="sign-up ">Sign Up</a>
+                <a href="{% url 'sign-up' %}" class="sign-up ">Sign Up</a>
             </div>
 
             <div class="mobile-share ">
-                <a href=" ">Sign Up</a>
+                <a href="{% url 'sign-up' %}">Sign Up</a>
             </div>
 
             <div class="left-share ">
