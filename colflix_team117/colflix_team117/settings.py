@@ -83,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'colflixdb',
-        'USER': 'postgres',
+        'USER': 'colflixdbuser',
         'PASSWORD': '12345',
         'HOST': 'localhost',
     }
