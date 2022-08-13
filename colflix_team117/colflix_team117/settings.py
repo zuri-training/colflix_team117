@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^jj9_1xo9-z_0@#gx48-nz%psef_q(jiad4wu=#t%w0z&y5!3v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -141,3 +142,5 @@ EMAIL_PORT = 587
 
 MEDIA_ROOT= os.path.join(BASE_DIR, 'media/')
 MEDIA_URL= "/media/"
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
