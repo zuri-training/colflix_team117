@@ -22,6 +22,9 @@ General user (unuthenticated) can only view videls but can't interact with the p
 2. `env/Scripts/activate` to activate virtual environment
 3. Run `git fetch origin` to fetch for remote updates
 4. Pull latest changes from the *main* branch. `git pull origin main`.
+5. Run `pip imstall -r requirements.txt` to install all necessary dependencies
+6. Run `cd colflix_team117` to enter project folder
+7. Run `python manage.py runserver` to start up the machine
 
 ## Branching
 ### Frontend
