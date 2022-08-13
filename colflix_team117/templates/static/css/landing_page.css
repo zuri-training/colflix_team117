@@ -38,10 +38,12 @@ nav ul li a {
 }
 
 .guest {
-    padding-right: 108px;
-    padding-left: 219px;
-    color: #0A0909;
-    text-decoration: underline;
+    padding: 24px 100px;
+    background: #FF6347;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 40px;
+    border-radius: 8px;
 }
 
 .mobile-nav {
@@ -1099,31 +1101,30 @@ footer ul li {
         list-style: none;
     }
     .mobile-menu-container ul li {
-        margin: 88px 0;
+        margin-top: 30px;
+        margin-right: 10px;
     }
     .mobile-menu-container ul li a {
         color: #0A0909;
         text-decoration: none;
         font-size: 20px;
     }
-    .mobile-menu-container .guest {
+    .mobile-menu-container .mobile-guest {
         padding-left: 0;
-        text-decoration: underline;
+        text-decoration: none;
+        padding: 18px 20px;
+        background:#FF6347;
+        color:#ffffff;
     }
     .mobile-menu-container {
         position: fixed;
         top: 0;
-        height: 548px;
-        width: 258px;
-        right: 100%;
-        background: #ffffff;
-        z-index: 200;
-        transition: all 400ms ease;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-        border: 1px solid #808080;
+       
+        right: 0;
+     
     }
-    .mobile-menu-container.active {
-        left: 0;
+    {% comment %} .mobile-menu-container.active {
+        left: 0; {% endcomment %}
     }
     .mobile-menu-container .close-icon {
         position: fixed;
