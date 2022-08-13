@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/landing_page.css' %}">
+    <link rel="stylesheet" href="{% static './css/landing_page.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@
         <div class="wrapper">
             <nav>
                 <div class="logo">
-                    <img src="{% static 'assets/images/header_logo.png' %}" alt="" />
+                    <img src="{% static './images/header_logo.png' %}" alt="" />
                 </div>
 
                 <ul>
@@ -41,17 +41,17 @@
             </nav>
             <nav class="mobile-nav">
                 <!-- <div class="menu-icon">
-                    <img src="{% static 'assets/images/mobile_menu.png' %}" alt="" />
+                    <img src="{% static './images/mobile_menu.png' %}" alt="" />
                 </div> -->
 
                 <div class="mobile-logo">
-                    <img src="{% static 'assets/images/mobile-logo.png' %}" alt=" " />
+                    <img src="{% static './images/mobile-logo.png' %}" alt=" " />
                 </div>
             </nav>
 
             <div class="mobile-menu-container ">
                 <!-- <div class="close-icon ">
-                    <img src="{% static 'assets/images/close-menu.svg' %} " alt=" " />
+                    <img src="{% static './images/close-menu.svg' %} " alt=" " />
                 </div> -->
                 <ul>
                     <!-- <li>
@@ -67,7 +67,7 @@
                     </li> -->
 
                     <li>
-                        <a href="# " class="mobile-guest ">Continue as guest</a>
+                        <a href="{% url 'index' %} " class="mobile-guest ">Continue as guest</a>
                     </li>
                 </ul>
             </div>
@@ -78,36 +78,36 @@
                         Colflix provides the best platform for college students to watch, share and upload short movies.
                     </p>
                         <div class="mobile-characters ">
-                            <img src="{% static 'images/mobile-style.png' %} " alt=" " />
+                            <img src="{% static './images/mobile-style.png' %} " alt=" " />
                         </div>
                         <a href="{% url 'sign-in' %}" class="sign-in ">Sign In</a>
-                        <a href="{% url 'sign-up' %} " class="sign-up ">Sign Up</a>
+                        <a href="{% url 'sign-up' %}" class="sign-up ">Sign Up</a>
                 </div>
 
                 <div class="right ">
-                    <img src="{% static 'images/Style.png' %} " alt=" " />
+                    <img src="{% static './images/Style.png' %} " alt=" " />
                 </div>
             </div>
         </div>
         </header>
 
         <div class="first-line ">
-            <img src="{% static 'images/line.svg'%} " alt=" " />
+            <img src="{% static './images/line.svg'%} " alt=" " />
         </div>
 
         <div class="movie-section ">
             <div class="mobile-line ">
-                <img src="{% static 'images/desktop-line.png' %} " alt=" " />
+                <img src="{% static './images/desktop-line.png' %} " alt=" " />
             </div>
             <h1>100+ short movies, 10+ new movies every week</h1>
             <p>Movies from any genre: action, fiction, drama, comedy ,etc</p>        
             <div class="movie-container ">
                 <div class="first-movie ">
                     <div class="first-movie-up ">
-                        <img src="{% static 'images/movie1.png' %} " alt=" " />
+                        <img src="{% static './images/movie1.png' %} " alt=" " />
 
                         <div class="play ">
-                            <img src="{% static 'images/desktop-play.png' %} " alt=" " />
+                            <img src="{% static './images/desktop-play.png' %} " alt=" " />
                         </div>
                     </div>
                     <div class="first-movie-down ">
@@ -118,9 +118,9 @@
 
                 <div class="second-movie ">
                     <div class="second-movie-up ">
-                        <img src="{% static 'images/movie2.png' %} " alt=" " />
+                        <img src="{% static './images/movie2.png' %} " alt=" " />
                         <div class="play ">
-                            <img src="{% static 'images/desktop-play.png' %} " alt=" " />
+                            <img src="{% static './images/desktop-play.png' %} " alt=" " />
                         </div>
                     </div>
                     <div class="second-movie-down ">
@@ -131,9 +131,9 @@
 
                 <div class="third-movie ">
                     <div class="third-movie-up ">
-                        <img src="{% static 'images/movie3.png' %} " alt=" " />
+                        <img src="{% static './images/movie3.png' %} " alt=" " />
                         <div class="play ">
-                            <img src="{% static 'images/desktop-play.png' %} " alt=" " />
+                            <img src="{% static './images/desktop-play.png' %} " alt=" " />
                         </div>
                     </div>
                     <div class="third-movie-down ">
@@ -144,9 +144,9 @@
 
                 <div class="mobile-movie ">
                     <div class="mobile-movie-up ">
-                        <img src="{% static 'images/mobile-movie1.png' %} " alt=" " />
+                        <img src="{% static './images/mobile-movie1.png' %} " alt=" " />
                         <div class="mobile-play ">
-                            <img src="{% static 'images/mobile-play.png' %} " alt=" " />
+                            <img src="{% static './images/mobile-play.png' %} " alt=" " />
                         </div>
                     </div>
 
@@ -160,20 +160,20 @@
         </div>
 
         <div class="second-line ">
-            <img src="{% static 'images/line.svg' %} " alt=" " />
+            <img src="{% static './images/line.svg' %} " alt=" " />
         </div>
 
         <div class="share-section ">
             <div class="mobile-line2 ">
-                <img src="{% static 'images/desktop-line.png'%} " alt=" " />
+                <img src="{% static './images/desktop-line.png'%} " alt=" " />
             </div>
             <div class="mobile-share-section ">
-                <img src="{% static 'images/mobile-rafiki.png' %} " alt=" " />
+                <img src="{% static './images/mobile-rafiki.png' %} " alt=" " />
             </div>
             <div class="right-share ">
                 <h1>Share movies that you enjoy</h1>
                 <p>Recommend good movies and share with other college students</p>
-                <a href="{% url 'sign-up' %}" class="sign-up ">Sign Up</a>
+                <a href=" " class="sign-up ">Sign Up</a>
             </div>
 
             <div class="mobile-share ">
@@ -181,15 +181,15 @@
             </div>
 
             <div class="left-share ">
-                <img src="{% static 'images/rafiki.png' %} " alt=" " />
+                <img src="{% static './images/rafiki.png' %} " alt=" " />
             </div>
         </div>
 
         <div class="third-line ">
-            <img src="{% static 'images/line.svg' %} " alt=" " />
+            <img src="{% static './images/line.svg' %} " alt=" " />
         </div>
         <div class="mobile-line3 ">
-            <img src="{% static 'images/desktop-line.png' %} " alt=" " />
+            <img src="{% static './images/desktop-line.png' %} " alt=" " />
         </div>
         <div class="review-section ">
             <h1>Read reviews made by other college students</h1>
@@ -197,18 +197,18 @@
             <div class="review-container ">
                 <div class="movie-review1 ">
                     <div class="first-review-up ">
-                        <img src="{% static 'images/movie4.png' %} " alt=" " />
+                        <img src="{% static './images/movie4.png' %} " alt=" " />
                         <div class="play ">
-                            <img src="{% static 'images/desktop-play.png' %} " alt=" " />
+                            <img src="{% static './images/desktop-play.png' %} " alt=" " />
                         </div>
                     </div>
                     <div class="first-review-down ">
                         <h3>LE NOUVEAU</h3>
                         <div class="rating ">
                             <p>Rating:</p>
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
                         </div>
                         <p>BY SIMON ADOH</p>
                     </div>
@@ -216,9 +216,9 @@
 
                 <div class="movie-review2 ">
                     <div class="second-review-up ">
-                        <img src="{% static 'images/movie2.png' %} " alt=" " />
+                        <img src="{% static './images/movie2.png' %} " alt=" " />
                         <div class="play ">
-                            <img src="{% static 'images/desktop-play.png' %} " alt=" " />
+                            <img src="{% static './images/desktop-play.png' %} " alt=" " />
                         </div>
                     </div>
                     <div class="second-review-down ">
@@ -226,11 +226,11 @@
 
                         <div class="rating ">
                             <p>Rating:</p>
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
                         </div>
                         <p>BY SANDRA BELL</p>
                     </div>
@@ -238,19 +238,19 @@
 
                 <div class="movie-review3 ">
                     <div class="third-review-up ">
-                        <img src="{% static 'images/movie3.png' %} " alt=" " />
+                        <img src="{% static './images/movie3.png' %} " alt=" " />
                         <div class="play ">
-                            <img src="{% static 'images/desktop-play.png' %} " alt=" " />
+                            <img src="{% static './images/desktop-play.png' %} " alt=" " />
                         </div>
                     </div>
                     <div class="third-review-down ">
                         <h3>STUDENT OF THE YEAR</h3>
                         <div class="rating ">
                             <p>Rating:</p>
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
-                            <img src="{% static 'images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
+                            <img src="{% static './images/star.svg'%} " alt=" " />
                         </div>
                         <p>BY JOHN EDO</p>
                     </div>
@@ -259,20 +259,20 @@
 
             <div class="mobile-review ">
                 <div class="mobile-review-up ">
-                    <img src="{% static 'images/mobile-movie2.png' %} " alt=" " />
+                    <img src="{% static './images/mobile-movie2.png' %} " alt=" " />
                     <div class="mobile-review-play ">
-                        <img src="{% static 'images/mobile-play.png' %} " alt=" " />
+                        <img src="{% static './images/mobile-play.png' %} " alt=" " />
                     </div>
                 </div>
                 <div class="mobile-review-down ">
                     <h3>STUDENT OF THE YEAR</h3>
                     <div class="rating ">
                         <p>Rating:</p>
-                        <img src="{% static 'images/star.svg'%} " alt=" " />
-                        <img src="{% static 'images/star.svg'%} " alt=" " />
-                        <img src="{% static 'images/star.svg'%} " alt=" " />
-                        <img src="{% static 'images/star.svg'%} " alt=" " />
-                        <img src="{% static 'images/star.svg'%} " alt=" " />
+                        <img src="{% static './images/star.svg'%} " alt=" " />
+                        <img src="{% static './images/star.svg'%} " alt=" " />
+                        <img src="{% static './images/star.svg'%} " alt=" " />
+                        <img src="{% static './images/star.svg'%} " alt=" " />
+                        <img src="{% static './images/star.svg'%} " alt=" " />
                     </div>
                     <p>BY SANDRA BELL</p>
                 </div>
@@ -282,29 +282,29 @@
 
 
         <div class="fourth-line ">
-            <img src="{% static 'images/line.svg' %} " alt=" " />
+            <img src="{% static './images/line.svg' %} " alt=" " />
         </div>
 
         <div class="streaming-section ">
             <div class="left-streaming ">
                 <div class="mobile-line4 ">
-                    <img src="{% static 'images/desktop-line.png' %} " alt=" " />
+                    <img src="{% static './images/desktop-line.png' %} " alt=" " />
                 </div>
                 <h1>The best streaming platform for college students</h1>
                 <p>
                     With Colflix you can watch movies uploaded by others and also upload your own to share with numerous students for free. Register today!
                 </p>
                 <div class="mobile-streaming-section ">
-                    <img src="{% static 'images/mobile-character.png' %} " alt=" " />
+                    <img src="{% static './images/mobile-character.png' %} " alt=" " />
                 </div>
-                <a href=" " class="sign-up ">Sign Up</a>
+                <a href="{% url 'sign-up' %}" class="sign-up ">Sign Up</a>
                 <div class="mobile-line5 ">
-                    <img src="{% static 'images/mobile-line2.png' %} " alt=" " />
+                    <img src="{% static './images/mobile-line2.png' %} " alt=" " />
                 </div>
             </div>
 
             <div class="right-streaming ">
-                <img src="{% static 'images/rafiki_night.png' %} " alt=" " />
+                <img src="{% static './images/rafiki_night.png' %} " alt=" " />
             </div>
         </div>
 
@@ -314,10 +314,10 @@
                 <p>
                     Colflix is a movie streaming platform that enables college students stream, share and upload short movies under 15mins while also providing features that promote interactions with other college students.
                 </p>
-                <img src="{% static 'images/facebook.png' %} " class=" first " alt=" " />
-                <img src="{% static 'images/insta.png' %} " alt=" " />
-                <img src="{% static 'images/twitter.png' %} " alt=" " />
-                <img src="{% static 'images/telegram.png' %} " alt=" " />
+                <img src="{% static './images/facebook.png' %} " class=" first " alt=" " />
+                <img src="{% static './images/insta.png' %} " alt=" " />
+                <img src="{% static './images/twitter.png' %} " alt=" " />
+                <img src="{% static './images/telegram.png' %} " alt=" " />
             </div>
 
             <div class="right-footer ">
@@ -375,27 +375,27 @@
         </footer>
 
         <div class="social ">
-            <img src="{% static 'images/facebook.png' %} " class=" first " alt=" " />
-            <img src="{% static 'images/insta.png' %} " alt=" " />
-            <img src="{% static 'images/twitter.png' %} " alt=" " />
-            <img src="{% static 'images/telegram.png' %} " alt=" " />
+            <img src="{% static './images/facebook.png' %} " class=" first " alt=" " />
+            <img src="{% static './images/insta.png' %} " alt=" " />
+            <img src="{% static './images/twitter.png' %} " alt=" " />
+            <img src="{% static './images/telegram.png' %} " alt=" " />
         </div>
         <div class="fifth-line ">
-            <img src="{% static 'images/line.svg' %} " alt=" " />
+            <img src="{% static './images/line.svg' %} " alt=" " />
         </div>
         <div class="mobile-line6 ">
-            <img src="{% static 'images/mobile-line2.png' %} " alt=" " />
+            <img src="{% static './images/mobile-line2.png' %} " alt=" " />
         </div>
         <div class="footer-logo ">
-            <img src="{% static 'images/footer_logo.png' %} " alt=" " />
-            <a href=" " class="footer_sign-up ">Sign Up</a>
+            <img src="{% static './images/footer_logo.png' %} " alt=" " />
+            <a href="{% url 'sign-up' %}" class="footer_sign-up ">Sign Up</a>
         </div>
 
         <div class="mobile-footer-logo ">
-            <img src="{% static 'images/mobile-footer-logo.png ' %} " alt=" " />
-            <a href=" " class="footer_sign-up ">Sign Up</a>
+            <img src="{% static './images/mobile-footer-logo.png ' %} " alt=" " />
+            <a href="{% url 'sign-up' %}" class="footer_sign-up ">Sign Up</a>
         </div>
-        <script src="{% static 'js/landing_page.js ' %}"></script>
+        <script src="{% static './js/landing_page.js ' %}"></script>
 </body>
 
 </html>
